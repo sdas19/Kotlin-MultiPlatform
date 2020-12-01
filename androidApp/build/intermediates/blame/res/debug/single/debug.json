@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/build/intermediates/res/merged/debug/layout_single_recipe_model.xml.flat",
+        "source": "/Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/res/layout/single_recipe_model.xml"
+    },
+    {
+        "merged": "/Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/res/layout/activity_main.xml"
+    }
+]

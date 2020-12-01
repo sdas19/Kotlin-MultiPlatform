@@ -1,0 +1,2 @@
+com/example/kotlin_multiplatform_sample/androidApp/BuildConfig.java
+ com.example.kotlin_multiplatform_sample.androidApp.BuildConfig

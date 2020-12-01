@@ -1,0 +1,2 @@
+com/example/kotlin_multiplatform_sample/shared/BuildConfig.java
+ com.example.kotlin_multiplatform_sample.shared.BuildConfig

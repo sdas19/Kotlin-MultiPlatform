@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml:2:1-128
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml:2:1-128
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml:2:1-128
+	package
+		ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml:2:70-126
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+		ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+		ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/src/androidMain/AndroidManifest.xml

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "applicationId": "com.example.kotlin_multiplatform_sample.androidApp",
+  "variantType": "BASE_APK",
+  "elements": []
+}
