@@ -4,21 +4,22 @@ ADDED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/andr
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+MERGED from [androidx.databinding:viewbinding:4.0.1] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/609fbc92434d7399bb16348c6ccb3022/viewbinding-4.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [:shared] /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.2.1] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/3b3dea136f87e2983324419e91e12657/material-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/906adbb6e2614917fb2f7ff7170e28c6/constraintlayout-2.0.2/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/71ef5c8ea6608002fa419b472cc87157/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/70484ec803f0f5e675e70612ffe4f18a/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/3903553455cff35134b22f13cb243bd2/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/bd16c045336c5367ddda8fd8409a97fe/transition-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cded931cd02d531b30ef2c1670665cf8/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/727a51d28615e1edf6e814e18dae5988/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/5e305fef39965623e46e369202c7767b/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/266d9c9e0e437a328b4d34fee7c7e847/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/992a26b88d8a06c20b5b8146f9053bed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/e33b88c1d26ef622d2075106c1924b70/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/a988a8256090ea38d1dfddc9f98f8904/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/37e7130cb1b6bb7b2c9167c979499f26/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/47b488280b5d1103609fe86926e168fa/loader-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -86,6 +87,8 @@ uses-sdk
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml
 INJECTED from /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:4.0.1] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/609fbc92434d7399bb16348c6ccb3022/viewbinding-4.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.0.1] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/609fbc92434d7399bb16348c6ccb3022/viewbinding-4.0.1/AndroidManifest.xml:20:5-44
 MERGED from [:shared] /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:shared] /Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/shared/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.2.1] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/3b3dea136f87e2983324419e91e12657/material-1.2.1/AndroidManifest.xml:20:5-44
@@ -94,6 +97,10 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/soumyajitd
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/906adbb6e2614917fb2f7ff7170e28c6/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/71ef5c8ea6608002fa419b472cc87157/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/71ef5c8ea6608002fa419b472cc87157/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/70484ec803f0f5e675e70612ffe4f18a/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/70484ec803f0f5e675e70612ffe4f18a/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/3903553455cff35134b22f13cb243bd2/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -106,16 +113,12 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/soumy
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/727a51d28615e1edf6e814e18dae5988/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/5e305fef39965623e46e369202c7767b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/5e305fef39965623e46e369202c7767b/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/72cd0940189bf1d8834d89be2ad40b24/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/266d9c9e0e437a328b4d34fee7c7e847/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/266d9c9e0e437a328b4d34fee7c7e847/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/992a26b88d8a06c20b5b8146f9053bed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/992a26b88d8a06c20b5b8146f9053bed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/e33b88c1d26ef622d2075106c1924b70/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/e33b88c1d26ef622d2075106c1924b70/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/cc52f9425aad09ad2abe747c13b72de5/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/a988a8256090ea38d1dfddc9f98f8904/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/a988a8256090ea38d1dfddc9f98f8904/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/37e7130cb1b6bb7b2c9167c979499f26/customview-1.0.0/AndroidManifest.xml:20:5-44

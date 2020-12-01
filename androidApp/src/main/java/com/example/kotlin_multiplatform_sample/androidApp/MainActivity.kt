@@ -3,7 +3,7 @@ package com.example.kotlin_multiplatform_sample.androidApp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlin_multiplatform_sample.androidApp.databinding.ActivityMainBinding
 import com.example.kotlin_multiplatform_sample.shared.Greeting
 import com.example.kotlin_multiplatform_sample.androidApp.recyclerview.RecipeAdapter
 import com.example.kotlin_multiplatform_sample.shared.DataSource
@@ -18,24 +18,24 @@ class MainActivity : AppCompatActivity() {
         DataSource().getStaticList()
     }
 
-    private lateinit var recyclerView : RecyclerView
+    private lateinit var activityMainBinding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activityMainBinding.root)
         setUpRecyclerview()
         setStaticData()
     }
 
     private fun setUpRecyclerview() {
-        recyclerView = findViewById(R.id.recyclerview)
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.hasFixedSize()
+        activityMainBinding.recyclerview.layoutManager = LinearLayoutManager(this)
+        activityMainBinding.recyclerview.hasFixedSize()
     }
 
     private fun setStaticData() {
         val adapter = RecipeAdapter()
-        recyclerView.adapter = adapter
+        activityMainBinding.recyclerview.adapter = adapter
         adapter.submitList(staticList)
     }
 }

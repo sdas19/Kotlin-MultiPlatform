@@ -14,6 +14,9 @@ dependencies {
 
 android {
     compileSdkVersion(29)
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.kotlin_multiplatform_sample.androidApp"
         minSdkVersion(24)

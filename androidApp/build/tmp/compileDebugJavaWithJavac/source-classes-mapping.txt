@@ -1,2 +1,6 @@
+com/example/kotlin_multiplatform_sample/androidApp/databinding/ActivityMainBinding.java
+ com.example.kotlin_multiplatform_sample.androidApp.databinding.ActivityMainBinding
+com/example/kotlin_multiplatform_sample/androidApp/databinding/SingleRecipeModelBinding.java
+ com.example.kotlin_multiplatform_sample.androidApp.databinding.SingleRecipeModelBinding
 com/example/kotlin_multiplatform_sample/androidApp/BuildConfig.java
  com.example.kotlin_multiplatform_sample.androidApp.BuildConfig
