@@ -4,6 +4,7 @@ import com.example.kotlin_multiplatform_sample.shared.RecipeApi
 import com.example.kotlin_multiplatform_sample.shared.data.Recipe
 import com.example.kotlin_multiplatform_sample.shared.data.RecipeResponse
 import com.example.kotlin_multiplatform_sample.shared.data.brewary.BrewaryResponseItem
+import com.example.kotlin_multiplatform_sample.shared.extensions.ResultHandler
 import io.ktor.client.engine.*
 
 class UseCaseImpl(private val engine: HttpClientEngine) : UseCase {
@@ -21,7 +22,7 @@ class UseCaseImpl(private val engine: HttpClientEngine) : UseCase {
         )
     }
 
-    override suspend fun fetchRecipe(): List<BrewaryResponseItem> {
+    override suspend fun fetchRecipe(): ResultHandler<List<BrewaryResponseItem>> {
         return RecipeApi(engine).fetchRecipe()
     }
 }

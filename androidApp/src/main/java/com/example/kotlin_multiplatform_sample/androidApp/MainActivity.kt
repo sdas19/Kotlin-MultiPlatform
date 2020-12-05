@@ -11,6 +11,7 @@ import com.example.kotlin_multiplatform_sample.shared.DataSource
 import com.example.kotlin_multiplatform_sample.shared.data.Recipe
 import com.example.kotlin_multiplatform_sample.shared.data.RecipeResponse
 import com.example.kotlin_multiplatform_sample.shared.data.brewary.BrewaryResponseItem
+import com.example.kotlin_multiplatform_sample.shared.extensions.ResultHandler
 import com.example.kotlin_multiplatform_sample.shared.usecase.UseCaseImpl
 import io.ktor.client.engine.*
 import io.ktor.client.engine.okhttp.*
@@ -46,16 +47,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fetchData() {
-        CoroutineScope(Dispatchers.IO).launch {
-            try {
-                val response = async { useCase.fetchRecipe() }.await()
-                Log.i("Response", response.toString())
-                val recipeList = response.toRecipeList()
-                withContext(Dispatchers.Main) {
+        CoroutineScope(Dispatchers.Main).launch {
+            when(val response = useCase.fetchRecipe()) {
+                is ResultHandler.Success -> run {
+                    val recipeList = response.data.toRecipeList()
                     setData(recipeList)
                 }
-            } catch (ex : Exception) {
-                Log.i("Exception", ex.message ?: "")
+                is ResultHandler.Error -> run {
+                    Log.i("Exception", response.throwable.message ?: "")
+                }
             }
         }
     }
