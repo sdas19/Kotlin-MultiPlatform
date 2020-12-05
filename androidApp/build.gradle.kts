@@ -4,11 +4,14 @@ plugins {
 }
 
 dependencies {
+    val ktor_version = "1.4.1"
     implementation(project(":shared"))
     implementation("com.google.android.material:material:1.2.1")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.2")
     implementation ("androidx.recyclerview:recyclerview:1.1.0")
+    implementation ("io.ktor:ktor-client-okhttp:$ktor_version")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.0")
 
 }
 
@@ -28,5 +31,8 @@ android {
         getByName("release") {
             isMinifyEnabled = false
         }
+    }
+    packagingOptions {
+        exclude ("META-INF/*.kotlin_module")
     }
 }

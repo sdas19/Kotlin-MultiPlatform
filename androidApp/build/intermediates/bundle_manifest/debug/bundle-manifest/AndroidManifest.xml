@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -15,7 +17,8 @@
         android:extractNativeLibs="false"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <activity android:name="com.example.kotlin_multiplatform_sample.androidApp.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
