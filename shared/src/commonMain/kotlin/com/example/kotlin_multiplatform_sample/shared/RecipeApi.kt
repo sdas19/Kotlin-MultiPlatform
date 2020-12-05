@@ -1,6 +1,5 @@
 package com.example.kotlin_multiplatform_sample.shared
 
-import com.example.kotlin_multiplatform_sample.shared.data.RecipeResponse
 import com.example.kotlin_multiplatform_sample.shared.data.brewary.BrewaryResponseItem
 import com.example.kotlin_multiplatform_sample.shared.extensions.ResultHandler
 import com.example.kotlin_multiplatform_sample.shared.extensions.runInDifferentCoroutine

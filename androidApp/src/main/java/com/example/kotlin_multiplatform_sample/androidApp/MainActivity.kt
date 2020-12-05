@@ -9,29 +9,22 @@ import com.example.kotlin_multiplatform_sample.shared.Greeting
 import com.example.kotlin_multiplatform_sample.androidApp.recyclerview.RecipeAdapter
 import com.example.kotlin_multiplatform_sample.shared.DataSource
 import com.example.kotlin_multiplatform_sample.shared.data.Recipe
-import com.example.kotlin_multiplatform_sample.shared.data.RecipeResponse
 import com.example.kotlin_multiplatform_sample.shared.data.brewary.BrewaryResponseItem
 import com.example.kotlin_multiplatform_sample.shared.extensions.ResultHandler
-import com.example.kotlin_multiplatform_sample.shared.usecase.UseCaseImpl
-import io.ktor.client.engine.*
-import io.ktor.client.engine.okhttp.*
-import io.ktor.util.*
 import kotlinx.coroutines.*
-import kotlin.Exception
 
 fun greet(): String {
     return Greeting().greeting()
 }
 
-@InternalAPI
 class MainActivity : AppCompatActivity() {
 
-    private val staticList by lazy {
-        DataSource().getStaticList(createHttpEngine())
+    private val dataSource by lazy {
+        DataSource()
     }
 
-    private val useCase by lazy {
-        UseCaseImpl(createHttpEngine())
+    private val staticList by lazy {
+        dataSource.getStaticList()
     }
 
     private lateinit var activityMainBinding: ActivityMainBinding
@@ -48,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun fetchData() {
         CoroutineScope(Dispatchers.Main).launch {
-            when(val response = useCase.fetchRecipe()) {
+            when(val response = dataSource.fetchListFromNetwork()) {
                 is ResultHandler.Success -> run {
                     val recipeList = response.data.toRecipeList()
                     setData(recipeList)
@@ -76,9 +69,5 @@ class MainActivity : AppCompatActivity() {
 
     private fun setData(staticList: List<Recipe>) {
         adapter.submitList(staticList)
-    }
-
-    private fun createHttpEngine(): HttpClientEngine {
-        return OkHttpEngine(OkHttpConfig())
     }
 }

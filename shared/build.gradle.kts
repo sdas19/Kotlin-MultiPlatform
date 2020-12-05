@@ -21,7 +21,6 @@ kotlin {
         val ktor_client_version = "1.0.0"
         val kotlinx_coroutines_version = "1.0.1"
         val kotlinx_serialization_json_version = "1.0.1"
-        val kotlinx_serialization_runtime_version = "0.20.0"
         val ktor_client_json_version = "1.2.2"
         val ktor_client_serialization_version = "1.3.2"
 
@@ -33,6 +32,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_json_version")
                 implementation ("io.ktor:ktor-client-json:$ktor_client_json_version")
                 implementation ("io.ktor:ktor-client-serialization:$ktor_client_serialization_version")
+                implementation("io.ktor:ktor-client-cio:$ktor_version")
             }
         }
         val commonTest by getting {
@@ -51,6 +51,7 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_json_version")
                 implementation ("io.ktor:ktor-client-json:$ktor_client_json_version")
                 implementation ("io.ktor:ktor-client-serialization-jvm:$ktor_version")
+                implementation("io.ktor:ktor-client-cio:$ktor_version")
             }
         }
         val androidTest by getting {
