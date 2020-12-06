@@ -2,16 +2,16 @@ package com.example.kotlin_multiplatform_sample.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.View.GONE
+import android.view.View.VISIBLE
+import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.kotlin_multiplatform_sample.androidApp.databinding.ActivityMainBinding
 import com.example.kotlin_multiplatform_sample.shared.Greeting
 import com.example.kotlin_multiplatform_sample.androidApp.recyclerview.RecipeAdapter
-import com.example.kotlin_multiplatform_sample.shared.DataSource
 import com.example.kotlin_multiplatform_sample.shared.data.Recipe
-import com.example.kotlin_multiplatform_sample.shared.data.brewary.BrewaryResponseItem
-import com.example.kotlin_multiplatform_sample.shared.extensions.ResultHandler
-import kotlinx.coroutines.*
 
 fun greet(): String {
     return Greeting().greeting()
@@ -19,46 +19,36 @@ fun greet(): String {
 
 class MainActivity : AppCompatActivity() {
 
-    private val dataSource by lazy {
-        DataSource()
-    }
-
-    private val staticList by lazy {
-        dataSource.getStaticList()
-    }
-
     private lateinit var activityMainBinding: ActivityMainBinding
     private val adapter = RecipeAdapter()
+    private val mainActivityViewModel : MainActivityViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
         setUpRecyclerview()
-        //setData(staticList)
-        fetchData()
+        observeViewState()
+        //setData(mainActivityViewModel.staticList)
+        mainActivityViewModel.fetchData()
     }
 
-    private fun fetchData() {
-        CoroutineScope(Dispatchers.Main).launch {
-            when(val response = dataSource.fetchListFromNetwork()) {
-                is ResultHandler.Success -> run {
-                    val recipeList = response.data.toRecipeList()
-                    setData(recipeList)
+    private fun observeViewState() {
+        mainActivityViewModel.mainActivityViewState.observe(this, Observer {  state ->
+            when(state) {
+                is MainActivityViewState.Loading -> {
+                    progressBarVisibility(isVisible = true)
                 }
-                is ResultHandler.Error -> run {
-                    Log.i("Exception", response.throwable.message ?: "")
+                is MainActivityViewState.SuccessFromNetwork -> {
+                    progressBarVisibility(isVisible = false)
+                    setData(recipeList = state.recipeList)
+                }
+                is MainActivityViewState.ErrorFromNetwork -> {
+                    progressBarVisibility(isVisible = false)
+                    showToast(message = state.throwable.message)
                 }
             }
-        }
-    }
-
-    private fun List<BrewaryResponseItem>.toRecipeList() : List<Recipe> {
-        val recipeList = mutableListOf<Recipe>()
-        this.map { item ->
-            recipeList.add(Recipe(item.name, item.description))
-        }
-        return recipeList
+        })
     }
 
     private fun setUpRecyclerview() {
@@ -67,7 +57,20 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding.recyclerview.hasFixedSize()
     }
 
-    private fun setData(staticList: List<Recipe>) {
-        adapter.submitList(staticList)
+    private fun setData(recipeList: List<Recipe>) {
+        activityMainBinding.recyclerview.visibility = VISIBLE
+        adapter.submitList(recipeList)
+    }
+
+    private fun progressBarVisibility(isVisible : Boolean) {
+        if(isVisible) {
+            activityMainBinding.progressbar.visibility = VISIBLE
+        } else {
+            activityMainBinding.progressbar.visibility = GONE
+        }
+    }
+
+    private fun showToast(message: String?) {
+        Toast.makeText(this, message ?: "Something went wrong", Toast.LENGTH_LONG).show()
     }
 }
