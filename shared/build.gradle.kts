@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.4.10"
+    kotlin("plugin.serialization") version "1.4.0"
     id("com.android.library")
 }
 
@@ -19,10 +19,12 @@ kotlin {
 
         val ktor_version = "1.4.1"
         val ktor_client_version = "1.0.0"
+        val ktor_client_core_ios_version = "1.0.0-beta-4"
+        val ktor_client_json_ios_version = "1.0.1"
         val kotlinx_coroutines_version = "1.0.1"
         val kotlinx_serialization_json_version = "1.0.1"
         val ktor_client_json_version = "1.2.2"
-        val ktor_client_serialization_version = "1.3.2"
+        val ktor_client_serialization_native_version = "1.3.1"
 
         val commonMain by getting {
             dependencies {
@@ -31,7 +33,7 @@ kotlin {
                 implementation( "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$kotlinx_coroutines_version")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_json_version")
                 implementation ("io.ktor:ktor-client-json:$ktor_client_json_version")
-                implementation ("io.ktor:ktor-client-serialization:$ktor_client_serialization_version")
+                implementation ("io.ktor:ktor-client-serialization:$ktor_version")
                 implementation("io.ktor:ktor-client-cio:$ktor_version")
             }
         }
@@ -48,7 +50,7 @@ kotlin {
                 implementation ("io.ktor:ktor-client:$ktor_client_version")
                 implementation( "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version")
                 implementation( "io.ktor:ktor-client-android:$ktor_version")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinx_serialization_json_version")
+                implementation ("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.1")
                 implementation ("io.ktor:ktor-client-json:$ktor_client_json_version")
                 implementation ("io.ktor:ktor-client-serialization-jvm:$ktor_version")
                 implementation("io.ktor:ktor-client-cio:$ktor_version")
@@ -60,7 +62,15 @@ kotlin {
                 implementation("junit:junit:4.13")
             }
         }
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$kotlinx_coroutines_version")
+                implementation ("io.ktor:ktor-client-ios:$ktor_version")
+                implementation ("io.ktor:ktor-client-core-ios:$ktor_client_core_ios_version")
+                implementation ("io.ktor:ktor-client-json-ios:$ktor_client_json_ios_version")
+                implementation ("io.ktor:ktor-client-serialization-native:$ktor_client_serialization_native_version")
+            }
+        }
         val iosTest by getting
     }
 }
