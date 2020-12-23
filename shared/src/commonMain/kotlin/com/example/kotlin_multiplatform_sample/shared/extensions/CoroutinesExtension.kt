@@ -3,7 +3,7 @@ package com.example.kotlin_multiplatform_sample.shared.extensions
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-suspend fun <T : Any> runInDifferentCoroutine(work: suspend () -> T): ResultHandler<T> = withContext(Dispatchers.Default) {
+suspend fun <T : Any> runInDifferentCoroutine(work: suspend () -> T): ResultHandler<T> = withContext(Dispatchers.Main) {
     try {
         val result = work()
         withContext(Dispatchers.Main) {

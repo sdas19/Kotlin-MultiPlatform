@@ -9,7 +9,7 @@ import io.ktor.util.*
 class DataSource {
 
     private val useCase by lazy {
-        UseCaseImpl(engine = CIO.create())
+        UseCaseImpl(engine = Engine().provideEngine())
     }
 
     fun getStaticList() = useCase.getStaticRecipeList()

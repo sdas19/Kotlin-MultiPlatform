@@ -4,7 +4,7 @@
             "outputFile": "/Users/soumyajitdas/Soumyajit_Projects/KotlinMultiplatformSample/androidApp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/71ef5c8ea6608002fa419b472cc87157/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "source": "/Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/6f1e44a6ddca91a783f2ae10d46c5601/appcompat-1.2.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/3b3dea136f87e2983324419e91e12657/material-1.2.1/res/values-land/values-land.xml",
+                    "source": "/Users/soumyajitdas/.gradle/caches/transforms-2/files-2.1/b4e534ef467205926cfd82260a70d530/material-1.2.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

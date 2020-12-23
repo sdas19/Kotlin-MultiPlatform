@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.4.0"
+    kotlin("plugin.serialization") version "1.4.20"
     id("com.android.library")
 }
 
@@ -17,11 +17,12 @@ kotlin {
     }
     sourceSets {
 
+        //val ktor_version = "1.4.3"
         val ktor_version = "1.4.1"
         val ktor_client_version = "1.0.0"
         val ktor_client_core_ios_version = "1.0.0-beta-4"
         val ktor_client_json_ios_version = "1.0.1"
-        val kotlinx_coroutines_version = "1.0.1"
+        val kotlinx_coroutines_version = "1.3.8"
         val kotlinx_serialization_json_version = "1.0.1"
         val ktor_client_json_version = "1.2.2"
         val ktor_client_serialization_native_version = "1.3.1"
